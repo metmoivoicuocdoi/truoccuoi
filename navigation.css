@@ -1,0 +1,122 @@
+/* Style for the overall navigation bar */
+.navigation-bar {
+  background-color: #fff; /* Black background */
+  color: #000; /* White text color */
+  border-color: #000;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-left: 280px;
+  margin-right: 100px;
+}
+
+/* Style for the first bar containing the logo and login button */
+.first-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style for the logo container */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Style for the circular logo */
+.circular-logo {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Style for the title */
+.title {
+  font-size: 24px;
+  margin: 0;
+  color: #000; /* White title color */
+}
+
+/* Style for the login button */
+.login-button, .create-button {
+  padding: 10px;
+  background-color: #fff; /* Black login button */
+  color: #000;
+  border: 2px solid #fff; /* Black border */
+  border-color: #000;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition on hover */
+}
+
+/* Change appearance on hover */
+.login-button:hover, .create-button:hover {
+  background-color: #000; /* White background on hover */
+  color: #fff; /* Black text color on hover */
+  border-color: #000; /* White border on hover */
+}
+
+/* Style for the search textarea */
+.search-textarea {
+  padding: 8px;
+  border: 3px solid #000; /* White border */
+  border-radius: 4px;
+  resize: none;
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  color: #000; /* Black text color */
+  background-color: #fff; /* White background */
+}
+
+.popup h2 {
+  margin-bottom: 10px;
+}
+
+.popup input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.popup .direct {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.popup button {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.popup.active,
+.overlay.active {
+  display: block;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  z-index: 1;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 20px;
+  z-index: 2;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+

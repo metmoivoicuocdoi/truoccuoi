@@ -1,0 +1,93 @@
+/* Reset some default styles */
+body, h1, h2, h6, p, ul, li, button {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style for the entire ThreadList component */
+.main-part {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style for the ThreadList heading */
+.vital {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Style for the thread cards */
+.card {
+  list-style: none;
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.5);
+  position: relative; /* Relative positioning */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+/* Change appearance on hover */
+
+.card-content {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+/* Style for the thread image */
+.img {
+  width: 100px; /* Adjust the width as needed */
+  height: auto;
+  border-radius: 4px;
+  margin-right: 15px;
+}
+
+/* Style for the text content */
+.text-content {
+  flex: 1;
+}
+
+/* Style for the thread title */
+.title {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+/* Style for the thread author */
+.author {
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+/* Style for the thread description */
+.description {
+  font-size: 16px;
+  color: #000;
+}
+
+/* Style for the "View Details" button */
+.more {
+  position: absolute;
+  top: 10px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+  background-color: #fff; /* Blue background for the button */
+  color: #000; /* White text color */
+  padding: 8px 12px;
+  border: 2px solid #000;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition on hover */
+}
+
+/* Change appearance on hover */
+.more:hover {
+  background-color: #000; /* Black background on hover */
+  color: #fff; /* White text color on hover */
+  border-color: #fff; /* White border on hover */
+}
+

@@ -1,0 +1,134 @@
+/* ThreadDetail.css */
+.main-detail {
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 20px;
+  z-index: 2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: scroll;
+}
+
+.main-detail.scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  border-radius: 0;
+}
+
+.handle {
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 8px;
+  cursor: pointer;
+  background-color: #fff; /* White background */
+  color: #000; /* Black text color */
+  border: 2px solid #000; /* Black border */
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition on hover */
+}
+
+.handle:hover {
+  background-color: #000; /* Black background on hover */
+  color: #fff; /* White text color on hover */
+  border-color: #fff; /* White border on hover */
+}
+
+.handle:disabled {
+  background-color: #ccc;
+  color: #666;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
+
+.detail-title {
+  font-size: 24px;
+  margin: 16px 0;
+}
+
+.index {
+  font-size: 16px;
+  color: #555;
+}
+
+.detail-img {
+  max-width: 100%;
+  height: auto;
+  margin: 16px 0;
+  border-radius: 4px;
+}
+
+.details {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-top: 16px;
+}
+
+.blur-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  z-index: 1;
+}
+
+/* ThreadDetail.css */
+
+.comment {
+  margin-top: 20px;
+}
+
+.comment form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.comment form input {
+  flex: 1;
+  padding: 8px;
+}
+
+.comment form button {
+  margin-left: 10px;
+  padding: 8px;
+  background-color: #4caf50; /* Green background color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.comment form button:disabled {
+  background-color: #cccccc; /* Grey background color for disabled state */
+  cursor: not-allowed;
+}
+
+.comment ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.comment label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.comment label button {
+  margin-left: 10px;
+  padding: 6px;
+  background-color: #f44336; /* Red background color for delete button */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
